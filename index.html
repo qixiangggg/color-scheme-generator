@@ -3,7 +3,21 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>index.html</h1>
+        <form>
+            <input type="color" aria-label="color">
+            <select name="mode" id="mode" aria-label="mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit">Get color scheme</button>
+        </form>
+        <div id="color"></div>
         <script src="index.js"></script>
     </body>
 </html>
