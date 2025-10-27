@@ -13,7 +13,7 @@ colorSchemeForm.addEventListener('submit',function(e){
 function renderColorSchema(colors){
     document.getElementById("colors").innerHTML = colors.map(
         color =>{ 
-        const colorHexValue = color.hex.value
+        const colorHexValue = color.hex
         return `
         <div class='color'>
             <div class='color-banner' style="background-color:${colorHexValue}"></div>
