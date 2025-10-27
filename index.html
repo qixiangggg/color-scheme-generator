@@ -4,8 +4,8 @@
     </head>
     <body>
         <form id="color-scheme-form">
-            <input type="color" aria-label="color" name="color">
-            <select name="mode" id="mode" aria-label="mode">
+            <input type="color" aria-label="color" name="color" class="colors-selector">
+            <select name="mode" id="mode" aria-label="mode" class="mode-selector">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
                 <option value="monochrome-light">Monochrome-light</option>
@@ -15,9 +15,9 @@
                 <option value="triad">Triad</option>
                 <option value="quad">Quad</option>
             </select>
-            <button type="submit">Get color scheme</button>
+            <button type="submit" class="get-color-scheme-btn">Get color scheme</button>
         </form>
-        <div id="colors"></div>
+        <div id="colors" class="colors"></div>
         <script src="index.js"></script>
     </body>
 </html>
