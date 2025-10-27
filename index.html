@@ -3,8 +3,8 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <form>
-            <input type="color" aria-label="color">
+        <form id="color-scheme-form">
+            <input type="color" aria-label="color" name="color">
             <select name="mode" id="mode" aria-label="mode">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
@@ -17,7 +17,7 @@
             </select>
             <button type="submit">Get color scheme</button>
         </form>
-        <div id="color"></div>
+        <div id="colors"></div>
         <script src="index.js"></script>
     </body>
 </html>
